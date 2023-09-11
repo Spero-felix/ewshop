@@ -78,7 +78,7 @@
 import NavBar from 'components/common/navbar/NavBar';
 import { useStore } from 'vuex';
 import { useRouter } from 'vue-router';
-import { reactive, toRefs, onMounted, computed } from 'vue';
+import { ref, reactive, toRefs, onMounted, computed } from 'vue';
 import {
   getCart,
   deleteCartItem,
@@ -86,7 +86,6 @@ import {
   modifyCart,
 } from '@/network/cart';
 import { showToast, showLoadingToast, closeToast } from 'vant';
-import { ref } from 'vue';
 
 export default {
   components: {
